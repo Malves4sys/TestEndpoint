@@ -9,7 +9,7 @@ ${QUERY_STRING}    ?teleconsultationTypeId=EMERGENCY&centerId=3fa85f64-5717-4562
 
 *** Test Cases ***
 Validate API Endpoint
-    [Documentation]    Testa se o endpoint da API retorna um código 200
+    [Documentation]    Testa se o endpoint da API retorna um código 200.
     Create Session    my_session    ${BASE_URL}
     ${url}=    Set Variable    ${ENDPOINT}${QUERY_STRING}
     ${response}=    GET On Session    my_session    ${url}
